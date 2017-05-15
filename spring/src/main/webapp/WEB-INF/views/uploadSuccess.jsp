@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>zfx首页</title>
+    <title>aaa</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,15 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<form action="home_upload" enctype="multipart/form-data" method="post">
-     	登录成功<br />
-  		姓名： <input name="name" value="${user.name}"><br />
-  		密码：<input name="password" value="${user.password}"><br />
-  		
-  		<hr />
-  		上传文件：<br />
-   		<input name="photo" type="file"><br />
-   		<input type="submit" value="提交">
-   </form>
+  	文件上传成功，${user.name}
+  	<hr />
+  	
+  	
   </body>
 </html>
