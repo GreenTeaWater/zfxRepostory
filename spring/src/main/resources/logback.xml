@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+<configuration debug="false" scan="true" scanPeriod="30 seconds"><!-- 'milliseconds','seconds','minutes' and 'hours' -->
+	<contextName>spring</contextName>
+	<jmxConfigurator />
+	<!-- 控制台输出日志 -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%-5level [%contextName] %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger [%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE-ERROR" />
+	</root>
+	
+	<logger name="org.springframework" additivity="true" level="INFO" />
+	<logger name="org.apache.mybatis" additivity="true" level="INFO" />
+	
+    <logger name="jdbc.connection" level="ERROR"/>
+    <logger name="jdbc.audit" level="ERROR"/>
+    <logger name="jdbc.resultsettable" level="ERROR"/>
+    <logger name="jdbc.sqlonly" level="INFO"/>
+    <logger name="jdbc.resultset" level="ERROR"/>
+    <logger name="jdbc.sql.timing" level="INFO"/>
+	
+</configuration>
