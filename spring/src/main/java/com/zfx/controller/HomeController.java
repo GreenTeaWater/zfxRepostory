@@ -20,7 +20,7 @@ import com.zfx.entry.User;
 @RequestMapping("/")
 public class HomeController {
 
-    
+      
     @RequestMapping("*")
     public String error(){
         
