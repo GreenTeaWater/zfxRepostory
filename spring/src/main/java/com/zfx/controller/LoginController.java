@@ -11,9 +11,8 @@ import com.zfx.entry.User;
 @RequestMapping("/")
 public class LoginController {
 
-   @RequestMapping("login")
+   @RequestMapping(value="login")
     public ModelAndView login(User user){
-       
        ModelAndView view = new ModelAndView() ;
        view.addObject("user", user);
        view.setViewName("home");

@@ -32,10 +32,10 @@
 			CommonsMultipartResolver：依赖Apache的commons-fileupload.jar和commons-io.jar 两个jar包
 			
 		书上说，如果以Part参数方式接收文件上传就没必要配置MultipartResolver上传文件解析器，只有MultipartFile参数形式接收才需要，但是实验所得，
-		Part,MultipartFile,byte[] 参数形式接收上传文件都不需要配置MultipartResolver
+		Part,byte[] 参数形式接收上传文件确实都不需要配置MultipartResolver, 但MultipartFile也不需要配置文件解析器，但是web.xml一定要配置multipart-config参数
 	 -->
-	<!-- <bean class="org.springframework.web.multipart.support.StandardServletMultipartResolver" />
-	 -->
+	 <bean class="org.springframework.web.multipart.support.StandardServletMultipartResolver" />
+	
 	<!-- <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="defaultEncoding" value="UTF-8" />
 		<property name="maxUploadSize" value="2048000" />

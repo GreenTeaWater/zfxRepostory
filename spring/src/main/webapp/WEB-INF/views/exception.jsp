@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>aaa</title>
+    <title>SpringMVC</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,9 +23,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	文件上传成功，${user.name}
-  	<hr />
-  	测试@ExceptionHandler <a href="home_exceptipn" name="提交" >提交</a>
-  	
+    	报错了,报错信息：${springException.message}<br>
+    	
+    	<hr />
+
+    	<form action="home_flashRedirect" method="post">
+	   	 	姓名：<input type="text" name="name">
+	   	 	密码：<input type="text" name="password" >
+	   	 	<input type="submit" value="flash">
+   	 	</form>
   </body>
 </html>

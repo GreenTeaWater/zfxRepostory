@@ -23,7 +23,7 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 		<multipart-config>
-			<location>D:\box</location>
+			<location>D:\</location>
 			<max-file-size>102400</max-file-size>
 			<max-request-size>204800</max-request-size>
 		</multipart-config> 
