@@ -1,4 +1,4 @@
-HomeController
+HomeController 
 	flashRedirect：
 			默认情况下，springMVC方法返回字符串开头是redirect: 是方法的重定向，如果想让重定向的方法携带参数，必须在URL上通过GET方式携带参数，但是
 			会有诸多不变，第二种方式就是通过spring的flash属性方式，在方法中通过model.addAttribute方式添加到Model中的参数，如果return是重定向的话，
