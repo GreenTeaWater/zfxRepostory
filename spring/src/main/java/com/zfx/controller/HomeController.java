@@ -3,6 +3,7 @@ package com.zfx.controller;
 import java.io.File;
 import java.io.IOException;
 
+import org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,6 @@ import com.zfx.entry.User;
 @RequestMapping("/")
 public class HomeController extends AbstractController{
 
- 
     @RequestMapping("*")
     public String error(){
         return "error";
