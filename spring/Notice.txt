@@ -1,9 +1,9 @@
 HomeController 
-	flashRedirect£º
-			Ä¬ÈÏÇé¿öÏÂ£¬springMVC·½·¨·µ»Ø×Ö·û´®¿ªÍ·ÊÇredirect: ÊÇ·½·¨µÄÖØ¶¨Ïò£¬Èç¹ûÏëÈÃÖØ¶¨ÏòµÄ·½·¨Ð¯´ø²ÎÊý£¬±ØÐëÔÚURLÉÏÍ¨¹ýGET·½Ê½Ð¯´ø²ÎÊý£¬µ«ÊÇ
-			»áÓÐÖî¶à²»±ä£¬µÚ¶þÖÖ·½Ê½¾ÍÊÇÍ¨¹ýspringµÄflashÊôÐÔ·½Ê½£¬ÔÚ·½·¨ÖÐÍ¨¹ýmodel.addAttribute·½Ê½Ìí¼Óµ½ModelÖÐµÄ²ÎÊý£¬Èç¹ûreturnÊÇÖØ¶¨ÏòµÄ»°£¬
-			²ÎÊý»á¼Óµ½ä¯ÀÀÆ÷µØÖ·ÖÐÍ¨¹ýGET·½Ê½´«µÝ£¬model.addFlashAttribute·½Ê½Ìí¼Óµ½ModelÖÐµÄ²ÎÊý£¨´ËÊ±µÄModel½Ó¿ÚÊµÏÖÊÇRedirectAttributes£©£¬Í¬
-			ÑùÒ²»á´«µÝµ½ÖØ¶¨ÏòºóµÄ·½·¨£¬ÆäÊµÔ­À´¾ÍÊÇÖØ¶¨ÏòÖ®Ç°springÏÈ°ÑflashÊôÐÔÖÐµÄ²ÎÊý·Åµ½ÁËsessionÖÐ£¬ÖØ¶¨ÏòÖ®ºóÔÙÈ¡³öÀ´£¬²¢ÇÒÉ¾³ýsessionÖÐµÄÊý¾Ý¡£
+	flashRedirectï¼š
+			é»˜è®¤æƒ…å†µä¸‹ï¼ŒspringMVCæ–¹æ³•è¿”å›žå­—ç¬¦ä¸²å¼€å¤´æ˜¯redirect: æ˜¯æ–¹æ³•çš„é‡å®šå‘ï¼Œå¦‚æžœæƒ³è®©é‡å®šå‘çš„æ–¹æ³•æºå¸¦å‚æ•°ï¼Œå¿…é¡»åœ¨URLä¸Šé€šè¿‡GETæ–¹å¼æºå¸¦å‚æ•°ï¼Œä½†æ˜¯
+			ä¼šæœ‰è¯¸å¤šä¸å˜ï¼Œç¬¬äºŒç§æ–¹å¼å°±æ˜¯é€šè¿‡springçš„flashå±žæ€§æ–¹å¼ï¼Œåœ¨æ–¹æ³•ä¸­é€šè¿‡model.addAttributeæ–¹å¼æ·»åŠ åˆ°Modelä¸­çš„å‚æ•°ï¼Œå¦‚æžœreturnæ˜¯é‡å®šå‘çš„è¯ï¼Œ
+			å‚æ•°ä¼šåŠ åˆ°æµè§ˆå™¨åœ°å€ä¸­é€šè¿‡GETæ–¹å¼ä¼ é€’ï¼Œmodel.addFlashAttributeæ–¹å¼æ·»åŠ åˆ°Modelä¸­çš„å‚æ•°ï¼ˆæ­¤æ—¶çš„ModelæŽ¥å£å®žçŽ°æ˜¯RedirectAttributesï¼‰ï¼ŒåŒ
+			æ ·ä¹Ÿä¼šä¼ é€’åˆ°é‡å®šå‘åŽçš„æ–¹æ³•ï¼Œå…¶å®žåŽŸæ¥å°±æ˜¯é‡å®šå‘ä¹‹å‰springå…ˆæŠŠflashå±žæ€§ä¸­çš„å‚æ•°æ”¾åˆ°äº†sessionä¸­ï¼Œé‡å®šå‘ä¹‹åŽå†å–å‡ºæ¥ï¼Œå¹¶ä¸”åˆ é™¤sessionä¸­çš„æ•°æ®ã€‚
 			
-			»¹·¢ÏÖÁíÍâÒ»¸öÎÊÌâ£¬Model×÷ÎªSpringMVC·½·¨µÄ²ÎÊý£¬²»½ÓÊÜStringÀàÐÍµÄÊôÐÔ
+			è¿˜å‘çŽ°å¦å¤–ä¸€ä¸ªé—®é¢˜ï¼ŒModelä½œä¸ºSpringMVCæ–¹æ³•çš„å‚æ•°ï¼Œä¸æŽ¥å—Stringç±»åž‹çš„å±žæ€§
 			
