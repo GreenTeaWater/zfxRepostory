@@ -137,7 +137,43 @@
           <artifactId>mysql-connector-java</artifactId>  
           <version>5.1.29</version>  
       </dependency>  
-
+	
+	<dependency>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-rt-frontend-jaxws</artifactId>
+	    <version>3.1.8</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-rt-transports-http</artifactId>
+	    <version>3.1.8</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.axis</groupId>
+	    <artifactId>axis</artifactId>
+	    <version>1.4</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/axis/axis-jaxrpc -->
+	<dependency>
+	    <groupId>axis</groupId>
+	    <artifactId>axis-jaxrpc</artifactId>
+	    <version>1.4</version>
+	</dependency>
+		<!-- https://mvnrepository.com/artifact/wsdl4j/wsdl4j -->
+	<dependency>
+	    <groupId>wsdl4j</groupId>
+	    <artifactId>wsdl4j</artifactId>
+	    <version>1.6.2</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/commons-discovery/commons-discovery -->
+	<dependency>
+	    <groupId>commons-discovery</groupId>
+	    <artifactId>commons-discovery</artifactId>
+	    <version>0.5</version>
+	</dependency>
+	
 
     <dependency>
       <groupId>junit</groupId>
