@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -23,7 +24,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<form action="home_upload" enctype="multipart/form-data" method="post">
+  
+  	 <form action="home_upload" enctype="multipart/form-data" method="post">
      	登录成功<br />
   		姓名： <input name="name" value="${user.name}"><br />
   		密码：<input name="password" value="${user.password}"><br />

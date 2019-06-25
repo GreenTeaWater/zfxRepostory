@@ -48,10 +48,11 @@ public class HomeController {
         xs.alias("xml", InputMessage.class);    
         // 将流转换为字符串    
         StringBuilder xmlMsg = new StringBuilder();    
-        byte[] b = new byte[4096];    
-        for (int n; (n = in.read(b)) != -1;) {    
-            xmlMsg.append(new String(b, 0, n, "UTF-8"));    
-        }    
+        byte[] bytes = new byte[4096];    
+        int len = -1 ;
+        while((len = in.read(bytes)) != -1){
+        	xmlMsg.append(new String(bytes, 0 , len));
+        }
         // 将xml内容转换为InputMessage对象    
         InputMessage inputMsg = (InputMessage) xs.fromXML(xmlMsg.toString());    
     

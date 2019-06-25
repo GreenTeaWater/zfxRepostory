@@ -1,6 +1,5 @@
 package com.zfx.controller;
 
-import java.io.File;
 import java.io.IOException;
 
 import org.springframework.stereotype.Controller;
@@ -11,28 +10,25 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.zfx.common.util.StringUtil;
 import com.zfx.entry.User;
 
 
 @Controller
-@RequestMapping("/")
 public class HomeController extends AbstractController{
 
-    @RequestMapping("*")
-    public String error(){
-        return "error";
-    }
     
-    @RequestMapping("loginPage")
-    public String home(){
-        return "login";
+    @RequestMapping("/")
+    public ModelAndView home(){
+    	ModelAndView view = new ModelAndView() ;
+    	 view.addObject("user", new User());
+    	 view.setViewName("index");
+         return view;
     }
      
     @RequestMapping(value="home_upload" ,method=RequestMethod.POST)
     public ModelAndView upload(User user , @RequestPart("photo")MultipartFile multipartFile) throws IllegalStateException, IOException{
         
-    	multipartFile.transferTo(new File("D:/" + multipartFile.getOriginalFilename()));
+    	//multipartFile.transferTo(new File("D:/" + multipartFile.getOriginalFilename()));
     	//photo.write("D:/" + photo.getSubmittedFileName()); //Part photo
     	
 	   ModelAndView view = new ModelAndView() ;
@@ -40,12 +36,6 @@ public class HomeController extends AbstractController{
        view.setViewName("uploadSuccess");
         return view;
         
-    }
-    
-    @RequestMapping("home_exceptipn")
-    public ModelAndView exception(){
-    	StringUtil.getString();
-		return null;
     }
     
     @RequestMapping("home_flashRedirect")

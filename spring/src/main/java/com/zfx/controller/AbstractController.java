@@ -12,7 +12,6 @@ public abstract class AbstractController {
 		 ModelAndView view = new ModelAndView() ;
 		 view.addObject("springException", springException);
 		 view.setViewName("exception");
-		 System.out.println("“Ï≥£¡À°£°£°£");
 		 return view;
 		
 	}

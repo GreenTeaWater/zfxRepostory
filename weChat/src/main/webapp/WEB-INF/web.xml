@@ -10,9 +10,9 @@
 		<param-value>classpath*:/applicationContext.xml</param-value>
   </context-param>
   
-  <listener>
+<!--   <listener>
 	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
+  </listener> -->
   
    <!-- Spring字符集过滤器 -->  
    <filter>  

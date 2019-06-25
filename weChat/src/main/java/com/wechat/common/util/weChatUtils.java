@@ -43,11 +43,10 @@ public class weChatUtils {
 	public static String getweather(String str) {
 		String result = "" ;
 		try {									
-			Client client = new Client(new URL("http://ws.webxml.com.cn/WebServices/WeatherWS.asmx?wsdl"));
-	    	Object [] req = new Object[3];
+			Client client = new Client(new URL("http://www.webxml.com.cn/WebServices/WeatherWebService.asmx?wsdl"));
+	    	Object [] req = new Object[1];
 	    	req[0] = str ;
-	    	req[1] = "240bc824eb72477a83424a825932ed0d" ;
-	    	Object[] results = client.invoke("getWeather", req);
+	    	Object[] results = client.invoke("getWeatherbyCityName", req);
 	    	
 	    	for(Object obj:results){
 	    		Document document = (Document)obj ;
