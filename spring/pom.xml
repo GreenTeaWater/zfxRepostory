@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
  <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springversion>5.1.4.RELEASE</springversion>
+		<springversion>5.3.18</springversion>
 		<junitversion>4.12</junitversion>
 	</properties>
 
